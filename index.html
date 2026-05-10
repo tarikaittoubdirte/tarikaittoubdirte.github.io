@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="container">
+            <div class="logo">CV WEB </div>
+            <ul class="nav-links">
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#education">Formation</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="profile-img">
+                    <img src="images/tarik.jpg" alt="Photo de profil">
+                </div>
+                <div class="header-text">
+                    <h1>TARIK AIT TOUBDIRTE</h1>
+                    <h2>Étudiant en Licence Informatique</h2>
+                    <div class="contact-info">
+                        <a href="mailto:email@example.com"><i class="fas fa-envelope"></i> at.tarik@gmail.com</a>
+                        <a href="https://linkedin.com/in/..." target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://github.com/..." target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">À propos</h2>
+                <div class="tabs-container">
+                    <ul class="tabs-nav">
+                        <li class="active" data-tab="parcours">Parcours</li>
+                        <li data-tab="interets">Centres d'intérêt</li>
+                        <li data-tab="objectifs">Objectifs</li>
+                    </ul>
+                    <div class="tab-content active" id="parcours">
+                        <p>Je suis étudiant en deuxième année de licence informatique. Au cours de mon parcours, j'ai acquis des compétences solides en programmation, bases de données et développement web.</p>
+                    </div>
+                    <div class="tab-content" id="interets">
+                        <p>J'aime résoudre des problèmes algorithmiques, découvrir de nouvelles technologies, et travailler sur des projets personnels. L'intelligence artificielle.</p>
+                    </div>
+                    <div class="tab-content" id="objectifs">
+                        <p>Mon objectif est de devenir développeur full-stack. Je souhaite intégrer une entreprise innovante où je pourrai mettre à profit mes compétences et continuer à apprendre.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Compétences</h2>
+                <div id="skills-container"></div>
+                <div class="skills-static">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>HTML5 / CSS3</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-level="90"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>JavaScript</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-level="75"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>PHP / MySQL</span>
+                            <span>30%</span></div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-level="30"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Python</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-level="60"></div></div>
+                    </div>
+                                        <!-- LANGUES -->
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Tamazihgte / Arabe</span>
+                            <span >100%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-level="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Français / Anglais</span>
+                            <span > 50%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-level="50"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Travail en équipe / Résolution de problèmes</span>
+                            <span > 80%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-level="80"></div>
+                        </div>
+                    </div>
+
+                </div>
+               
+        </section>
+
+        <section id="education" class="section">
+            <div class="container">
+                <h2 class="section-title">Formation</h2>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="acc-year">2025 – 2026</span>
+                        <span class="acc-title">Licence L2 Informatique</span>
+                        <span class="acc-school">Université Cadi Ayyad</span>
+                        <span class="acc-toggle">+</span>
+                    </div>
+                    <div class="accordion-body">
+                        <span class="acc-mention">En cours</span>
+                        <p>Deuxième année de licence informatique, cours avancés de programmation web, bases de données, algorithmique, structures de données et des autres domaines.</p>
+                        <div class="tech-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">React</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">Algorithmique</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="acc-year">2024 – 2025</span>
+                        <span class="acc-title">Licence L1 Informatique</span>
+                        <span class="acc-school">Université Cadi Ayyad</span>
+                        <span class="acc-toggle">+</span>
+                    </div>
+                    <div class="accordion-body">
+                        <p>Première année de licence. Acquisition des fondamentaux en programmation (Python, C), mathématiques et physique.</p>
+                        <div class="tech-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">C</span>
+                            <span class="tag">Réseaux</span>
+                            <span class="tag">Mathématiques</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="acc-year">2023 – 2024</span>
+                        <span class="acc-title">Baccalauréat Scientifique</span>
+                        <span class="acc-school">Lycée Touama</span>
+                        <span class="acc-toggle">+</span>
+                    </div>
+                    <div class="accordion-body">
+                        <span class="acc-mention">Mention Bien</span>
+                        <p>Obtention du baccalauréat scientifique avec mention. Sciences physiques.</p>
+                        <div class="tech-tags">
+                            <span class="tag">Mathématiques</span>
+                            <span class="tag">Physique</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="projects" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Expériences & Projets</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Tous</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile</button>
+                    <button class="filter-btn" data-filter="data">Data</button>
+                </div>
+                <div id="projects-container"></div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-wrapper">
+                    <form id="contact-form" class="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name">Nom</label>
+                            <input type="text" id="name" name="name" placeholder="Votre nom complet">
+                            <span class="error-msg"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="votre@email.com">
+                            <span class="error-msg"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Votre message..."></textarea>
+                            <span class="error-msg"></span>
+                        </div>
+                        <button type="submit" class="btn-submit">Envoyer</button>
+                        <div id="form-feedback"></div>
+                    </form>
+                    <div id="react-contact-info"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 TARIK AIT TOUBDIRTE. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <a href="#header" id="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-scripts.js"></script>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel" src="js/react-components.js"></script>
+</body>
+</html>

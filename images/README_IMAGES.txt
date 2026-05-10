@@ -1,0 +1,1 @@
+Ajoutez ici vos images :\n- profile.jpg (photo de profil)\n- project1.jpg (capture projet 1)\n- project2.jpg (capture projet 2)
