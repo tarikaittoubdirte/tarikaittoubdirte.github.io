@@ -1,12 +1,18 @@
-function ProjectCard({ title, description, technologies, githubLink, demoLink, image }) {
+function ProjectCard({ title, description, technologies, githubLink, demoLink, image, gradient, badge, category }) {
     return (
-        <div className="project-card">
-            <div className="project-image">
-                <img src={image} alt={title} />
+        <div className="project-card" data-category={category}>
+            <div
+                className={"project-image" + (gradient ? " card-gradient-header" : "")}
+                style={gradient ? { background: gradient } : {}}
+            >
+                {!gradient && image && <img src={image} alt={title} />}
+                {badge && <span className="header-badge">{badge}</span>}
                 <div className="project-overlay">
-                    <a href={githubLink} target="_blank" rel="noopener noreferrer" className="btn-project">
-                        <i className="fab fa-github"></i> Code
-                    </a>
+                    {githubLink && (
+                        <a href={githubLink} target="_blank" rel="noopener noreferrer" className="btn-project">
+                            <i className="fab fa-github"></i> Code
+                        </a>
+                    )}
                     {demoLink && (
                         <a href={demoLink} target="_blank" rel="noopener noreferrer" className="btn-project">
                             <i className="fas fa-external-link-alt"></i> Démo
@@ -82,7 +88,31 @@ const projectsRoot = ReactDOM.createRoot(document.getElementById('projects-conta
 projectsRoot.render(
     <React.StrictMode>
         <div className="projects-grid">
-        
+            <ProjectCard
+                title="Site Web – Vente de Livres"
+                description="Site statique responsive avec catalogue, pages produits et interface de panier. Design soigné et navigation fluide."
+                technologies={["HTML5", "CSS3", "JavaScript"]}
+                githubLink="https://github.com/..."
+                gradient="linear-gradient(135deg, #8B6914 0%, #3d2a0e 50%, #1a1208 100%)"
+                category="web"
+            />
+            <ProjectCard
+                title="Jeu Vidéo – SFML3"
+                description="Jeu développé en C++ avec la bibliothèque SFML3 : sprites animés, gestion des collisions et système de score."
+                technologies={["C++", "SFML3", "Game Dev"]}
+                githubLink="https://github.com/..."
+                gradient="radial-gradient(ellipse at 50% 40%, #3d2e1a 0%, #1a1208 55%, #0d0905 100%)"
+                badge="C++ / SFML3"
+                category="mobile"
+            />
+            <ProjectCard
+                title="Portfolio DevWeb"
+                description="Portfolio dark mode avec animations fluides, typed text, effets glow, composants React et interactions jQuery."
+                technologies={["HTML5", "CSS3", "React", "jQuery"]}
+                githubLink="https://github.com/tarikaittoubdirte"
+                gradient="linear-gradient(135deg, #2a2535 0%, #1a1520 50%, #1a140a 100%)"
+                category="web"
+            />
         </div>
     </React.StrictMode>
 );

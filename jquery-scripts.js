@@ -110,10 +110,7 @@ $(document).ready(function() {
             $('.project-card').fadeIn(300);
         } else {
             $('.project-card').each(function() {
-                const tags = $(this).find('.tag').map(function() {
-                    return $(this).text().toLowerCase();
-                }).get().join(' ');
-                if (tags.includes(filter)) {
+                if ($(this).data('category') === filter) {
                     $(this).fadeIn(300);
                 } else {
                     $(this).fadeOut(200);
