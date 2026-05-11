@@ -102,7 +102,7 @@ projectsRoot.render(
                 technologies={["C++", "SFML3", "Game Dev"]}
                 githubLink="https://github.com/..."
                 gradient="radial-gradient(ellipse at 50% 40%, #3d2e1a 0%, #1a1208 55%, #0d0905 100%)"
-                badge="C++ / SFML3"
+               
                 category="mobile"
             />
             <ProjectCard
